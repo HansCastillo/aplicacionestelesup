@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PRACTICA_FORMULARIO_JAVASCRIPT</title>
+<link rel="stylesheet" href="estilo1.css">
+</head>
+<body>
+  
+  <div id="contenedor1">
+    <div id="fondo1" class="fondo-rustico"></div>
+    <div id="fondo2">
+      <img id="logo" class="logo-reducido" src="logo-circular-chefmart.png" alt="">      
+      <div id="titulo" class="titulo-escala-reducida"><h1>APLICACIONES<br>TELESUP</h1></div>
+      <div id="subtitulo" class="subtitulo-oculto"><h3>mensaje conspirador iluminati reptiliano</h3></div>
+    </div>        
+  </div>
+
+
+<script>  
+  setTimeout(function(){
+    fondo1.classList.add("fondo-rustico-blur");
+    logo.classList.add("logo-rotar");    
+  },10);
+  setTimeout(function(){
+    logo.classList.add("logo-200");
+  },1500);      
+  setTimeout(function(){
+    logo.classList.add("logo-left");
+    titulo.classList.add("titulo-escala-normal");
+  },2000);      
+  setTimeout(function(){
+    subtitulo.classList.add("subtitulo-descubierto");
+  },3000);
+  
+</script>
+</body>
+</html>
+  
