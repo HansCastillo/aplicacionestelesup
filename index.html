@@ -4,15 +4,23 @@
 <meta charset="utf-8">
 <title>PRACTICA_FORMULARIO_JAVASCRIPT</title>
 <link rel="stylesheet" href="estilo1.css">
+<link rel="stylesheet" href="barra_menu.css">
 </head>
-<body>
-  
+<body>  
+  <div id="contenedor-menu">
+    <div></div>
+    <div><a href="#"><h4>INICIO</h4></a></div>
+    <div><a href="#"><h4>NOSOTROS</h4></a></div>
+    <div><a href="#"><h4>SERVICIOS</h4></a></div>  
+    <div><a href="#"><h4>NOVEDADES</h4></a></div>  
+    <div><a href="#"><h4>CONTÁCTENOS</h4></a></div>  
+  </div>  
   <div id="contenedor1">
     <div id="fondo1" class="fondo-rustico"></div>
     <div id="fondo2">
-      <img id="logo" class="logo-reducido" src="logo-circular-chefmart.png" alt="">      
+      <img id="logo" class="logo-reducido" src="logo20.jpg" alt="">      
       <div id="titulo" class="titulo-escala-reducida"><h1>APLICACIONES<br>TELESUP</h1></div>
-      <div id="subtitulo" class="subtitulo-oculto"><h3>mensaje conspirador iluminati reptiliano</h3></div>
+      <div id="subtitulo" class="subtitulo-oculto"><h3>Especialistas en diseño y desarrollo de aplicaciones móviles </h3></div>
     </div>        
   </div>
 
@@ -21,17 +29,17 @@
   setTimeout(function(){
     fondo1.classList.add("fondo-rustico-blur");
     logo.classList.add("logo-rotar");    
-  },10);
+  },1000);
   setTimeout(function(){
     logo.classList.add("logo-200");
-  },1500);      
+  },2500);      
   setTimeout(function(){
     logo.classList.add("logo-left");
     titulo.classList.add("titulo-escala-normal");
-  },2000);      
+  },3000);      
   setTimeout(function(){
     subtitulo.classList.add("subtitulo-descubierto");
-  },3000);
+  },4000);
   
 </script>
 </body>
