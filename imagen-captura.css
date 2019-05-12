@@ -6,47 +6,44 @@
 }    
 #contenedor-capturas{    
     display:grid;
-    grid-template-rows: 300px; 
-    grid-template-columns: repeat(3,400px);     
+    grid-template-rows: 400px; 
+    grid-template-columns: repeat(4,450px);     
     grid-gap:100px;
 
     transition: 1s;
     position:relative;
-    left:calc(50% - 200px);            
-    //background: red;
-    height:400px;
+    left:calc(50% - 250px);                   
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#sub-contenedor-captura{    
+.sub-contenedor-captura{    
     display:grid;
     grid-template-rows: 400px; 
-    grid-template-columns: 250px 200px; 
-
+    grid-template-columns: 250px 200px;     
 }
-#sub-contenedor-captura p{            
+.sub-contenedor-captura p{            
     font-size:1.2em;
-    padding:20px;
+    padding:15px;
     display:flex;
 	align-items: center;
 	justify-content: center; 
 }
-#sub-contenedor-captura img{    
+.sub-contenedor-captura img{    
     width:250px;
     height:400px;
 }
 #botones div{   
     transition:0.5s; 
-    background:rgb(0, 0, 0);
-    width:80px;
-    height:30px;
+    background:rgb(85, 85, 85);
+    width:50px;
+    height:20px;
     border-radius: 50px;
     display:inline-block;
 }
 #botones div:hover{
-    background:rgb(3, 5, 117);
+    background:rgb(8, 9, 22);
 } 
 #botones{
-    width:300px;
-    margin:0px auto 100px;
-
+    
+    width:220px;
+    margin:0px auto 100px;    
 }

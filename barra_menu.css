@@ -5,7 +5,7 @@ body{position:relative;}
     grid-template-columns: repeat(7,1fr);
     grid-template-rows: 70px; 
 
-    background:rgba(2, 1, 1, 0.596);
+    background:rgba(2, 1, 1, 0.472);
     position:fixed;    
     font-family: Arial, Helvetica, sans-serif;
     z-index: 1;        
@@ -29,4 +29,15 @@ body{position:relative;}
     grid-column:7/8;
 
     background:rgb(158, 0, 0);
+}
+#mlog1 img{
+    width:50px;
+    height:50px;    
+}
+#mlog1{
+    transition: 1s;
+    text-shadow: 1px 1px 5px  rgb(0, 0, 195);
+    color:rgb(163, 177, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity:0;
 }
