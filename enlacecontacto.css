@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+#enlacecontacto{
+    transition:0.5s;
+    width: 200px;
+    height:80px;
+    background: rgba(172, 255, 47, 0.5);    
+    position: fixed;
+    top:100px;
+    right:-110px;
+    border-radius: 20px 0 0 20px;
+
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#enlacecontacto img{
+    width: 50px;
+    height:50px;
+}
+#enlacecontacto {
+    padding-left:30px;    
+}
+#enlacecontacto a{
+    text-decoration: none;
+    display:block;    
+    height:80px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:white;
+}
+#enlacecontacto:hover{
+    right:0px;
+    background: rgb(153, 255, 0);    
+}
+#enlacecontacto:hover img{
+    animation-duration:0.3s;
+    animation-iteration-count: 3;
+    animation-timing-function: ease;
+    animation-name:telefono;
+    
+}
+@keyframes telefono{
+    25%{transform:rotate(15deg);}
+    50%{transform:rotate(0deg);}
+    75%{transform:rotate(-15deg);}
+}
+.trasladarcuerpo{
+    transition:1s;
+    transform:translateY(-1000px);
+}
