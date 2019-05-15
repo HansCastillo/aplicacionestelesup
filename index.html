@@ -2,13 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
 <title>PRACTICA_FORMULARIO_JAVASCRIPT</title>
 <link rel="stylesheet" href="estilo1.css">
 <link rel="stylesheet" href="barra_menu.css">
 <link rel="stylesheet" href="imagen-captura.css">
 <link rel="stylesheet" href="temas.css">
-<link rel="stylesheet" href="enlacecontacto.css">
 <link rel="stylesheet" href="contacto.css">
 </head>
 <body>  
@@ -19,7 +17,9 @@
     <div><a href="#"><h4>SERVICIOS</h4></a></div>  
     <div><a href="#"><h4>NOVEDADES</h4></a></div>  
     <div><a href="#"><h4>CONTÁCTENOS</h4></a></div>  
-  </div> 
+  </div>
+
+  <div id="cuerpo">
 
   <div id="contenedor1">
     <div id="fondo1" class="fondo-rustico"></div>
@@ -82,28 +82,14 @@
     <div id="b3"></div>
     <div id="b4"></div>
 </div>
-<div id="enlacecontacto">
-  <img src="iconcel.png" alt="">
-  <a href="#contenedor-contacto">CONTACTO</a>
-</div>
-<div id="contenedor-contacto" class="claseflex">
-  <div id="mapa"></div>
-  <div id="datos-contacto" class="">
-    <div class="datos-contacto-des claseflex">
-      <img src="icono-ubicacion.png" alt="ubicacion">
-      <div>Av. Simon Bolivar 374 - Villa María del Triunfo</div>
-    </div>
-    <div class="datos-contacto-des claseflex">
-        <img src="icono-telefono.png" alt="">
-        <div> (01) 295-3116</div>
-    </div>
-    <div class="datos-contacto-des claseflex">
-        <img src="icono-correo.png" alt="">
-        <div>comercial@genussolucionesti.com</div>
-    </div>
-  </div>
+
 </div>
 
+<div id="contacto">
+  <img src="iconcel.png" alt="">
+  <div>CONTACTAR</div>
+</div>
+  
 
 
 <script>  
@@ -155,7 +141,10 @@
         minilogo=false;  
       }
     }
-  }  
+  }
+  document.body.ondblclick=function(){
+   alert(window.pageYOffset);
+  }
 </script>
 <script>
   contacto.onmouseover=function(){
@@ -163,12 +152,12 @@
   };
 </script>
 <script>//temas transicion
-  /*let anchopantalla=screen.availHeight;
+  let anchopantalla=screen.availHeight;
   document.body.style.height="500px;";  
   document.body.style.overflow="hidden";
   contacto.onclick=function(){
     cuerpo.classList.add("trasladarcuerpo");
-  };*/
+  };
 </script>
 
 </body>
