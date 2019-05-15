@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="imagen-captura.css">
 <link rel="stylesheet" href="temas.css">
 <link rel="stylesheet" href="contacto.css">
+<link rel="stylesheet" href="enlacecontacto.css">
 </head>
 <body>  
   <div id="contenedor-menu">
@@ -84,10 +85,26 @@
 </div>
 
 </div>
-
-<div id="contacto">
+<div id="enlacecontacto">
   <img src="iconcel.png" alt="">
-  <div>CONTACTAR</div>
+  <a href="#contenedor-contacto">CONTACTO</a>
+</div>
+<div id="contenedor-contacto" class="claseflex">
+  <div id="mapa"></div>
+  <div id="datos-contacto" class="">
+    <div class="datos-contacto-des claseflex">
+      <img src="icono-ubicacion.png" alt="ubicacion">
+      <div>Av. Simon Bolivar 374 - Villa María del Triunfo</div>
+    </div>
+    <div class="datos-contacto-des claseflex">
+        <img src="icono-telefono.png" alt="">
+        <div> (01) 295-3116</div>
+    </div>
+    <div class="datos-contacto-des claseflex">
+        <img src="icono-correo.png" alt="">
+        <div>comercial@genussolucionesti.com</div>
+    </div>
+  </div>
 </div>
   
 
@@ -152,12 +169,12 @@
   };
 </script>
 <script>//temas transicion
-  let anchopantalla=screen.availHeight;
+  /*let anchopantalla=screen.availHeight;
   document.body.style.height="500px;";  
   document.body.style.overflow="hidden";
   contacto.onclick=function(){
     cuerpo.classList.add("trasladarcuerpo");
-  };
+  };*/
 </script>
 
 </body>
